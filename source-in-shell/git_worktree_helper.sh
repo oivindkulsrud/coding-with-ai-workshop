@@ -4,8 +4,8 @@
 # Usage: source git-worktree-helper.sh
 
 # Create a new worktree based on the current branch with a postfix
-# Usage: create-worktree <postfix>
-create-worktree() {
+# Usage: worktree-create <postfix>
+worktree-create() {
     local postfix="$1"
 
     # Check if we're in a git repository
@@ -16,8 +16,8 @@ create-worktree() {
 
     # Check if postfix is provided
     if [ -z "$postfix" ]; then
-        echo "Usage: create-worktree <postfix>"
-        echo "Example: create-worktree feature-new"
+        echo "Usage: worktree-create <postfix>"
+        echo "Example: worktree-create feature-new"
         return 1
     fi
 
@@ -78,8 +78,8 @@ create-worktree() {
 }
 
 # List all worktrees
-# Usage: list-worktrees
-list-worktrees() {
+# Usage: worktree-list
+worktree-list() {
     if ! git rev-parse --git-dir > /dev/null 2>&1; then
         echo "Error: Not in a git repository"
         return 1
@@ -90,8 +90,8 @@ list-worktrees() {
 }
 
 # Remove a worktree
-# Usage: remove-worktree <path>
-remove-worktree() {
+# Usage: worktree-remove <path>
+worktree-remove() {
     local worktree_path="$1"
 
     if ! git rev-parse --git-dir > /dev/null 2>&1; then
@@ -100,7 +100,7 @@ remove-worktree() {
     fi
 
     if [ -z "$worktree_path" ]; then
-        echo "Usage: remove-worktree <path>"
+        echo "Usage: worktree-remove <path>"
         echo ""
         echo "Available worktrees:"
         git worktree list
@@ -117,8 +117,8 @@ remove-worktree() {
     fi
 }
 
-echo "Git Worktree Helper loaded!"
-echo "Available commands:"
-echo "  create-worktree <postfix>  - Create a new worktree with postfix"
-echo "  list-worktrees            - List all worktrees"
-echo "  remove-worktree <path>    - Remove a worktree"
+# echo "Git Worktree Helper loaded!"
+# echo "Available commands:"
+# echo "  worktree-create <postfix>  - Create a new worktree with postfix"
+# echo "  worktree-list             - List all worktrees"
+# echo "  worktree-remove <path>    - Remove a worktree"
