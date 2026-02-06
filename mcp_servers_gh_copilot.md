@@ -15,6 +15,7 @@ which code
 code --version
 ```
 
+example install command:
 
 ```
 code --add-mcp '{"name":"io.github.ChromeDevTools/chrome-devtools-mcp","command":"npx","args":["-y","chrome-devtools-mcp"],"env":{}}'
