@@ -45,7 +45,9 @@ Det hender agenten ikke plukker opp at den har skills tilgjengelig, det kan hjel
 https://www.npmjs.com/package/chrome-devtools-mcp
 
 Follow the configure MCP guide using the standard config from above. You can also install the Chrome DevTools MCP server using the Codex CLI:
-codex mcp add chrome-devtools -- npx chrome-devtools-mcp@latest
+
+`codex mcp add chrome-devtools -- npx chrome-devtools-mcp@latest`
+
 On Windows 11
 
 Configure the Chrome install location and increase the startup timeout by updating .codex/config.toml and adding the following env and startup_timeout_ms parameters:
