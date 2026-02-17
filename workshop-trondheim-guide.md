@@ -12,7 +12,7 @@ https://marketplace.visualstudio.com/items?itemName=openai.chatgpt
 Codex kan også installeres som en CLI app på mac, linux og windows (med WSL). Den raskeste veien til målet er å bruke vscode, men om du har installert eller får installert node kan du installere codex for bruk i terminalen med `npm i -g @openai/codex`. 
 
 ## Logg inn i codex
-Når du har installert Codex kan du logge på med en API key vi vil gi deg tilgang til under workshoppen, men det kan være nyttig å vite at bruk av Codex er inkluder i et ChatGPT abonnement. Du kan også logge deg på ved å paste API keyen inn i terminalen etter å ha installert codex og kjørt `codex` i terminalen.
+Når du har installert Codex kan du logge på i extension eller cli med en API key vi vil gi deg tilgang til under workshoppen, men det kan være nyttig å vite at bruk av Codex er inkluder i et ChatGPT abonnement. Du kan også logge deg på ved å paste API keyen inn i terminalen etter å ha installert codex og kjørt `codex` i terminalen.
 
 ## Gratulerer! 
 
