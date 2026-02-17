@@ -41,26 +41,12 @@ Velg disse instillingene:
 Det hender agenten ikke plukker opp at den har skills tilgjengelig, det kan hjelpe å minne den på dette. Det samme gjelder for MCP servere.
 
 
-## MCP-server 
-https://www.npmjs.com/package/chrome-devtools-mcp
+## Agent-browser
+https://github.com/vercel-labs/agent-browser
 
-Follow the configure MCP guide using the standard config from above. You can also install the Chrome DevTools MCP server using the Codex CLI:
-
-`codex mcp add chrome-devtools -- npx chrome-devtools-mcp@latest`
-
-On Windows 11
-
-Configure the Chrome install location and increase the startup timeout by updating .codex/config.toml and adding the following env and startup_timeout_ms parameters:
-
+Hva man skal gjøre her kan variere litt med hvilket operativsystem man bruker, men det virker med WSL.
 
 ```
-command = "cmd"
-args = [
-    "/c",
-    "npx",
-    "-y",
-    "chrome-devtools-mcp@latest",
-]
-env = { SystemRoot="C:\\Windows", PROGRAMFILES="C:\\Program Files" }
-startup_timeout_ms = 20_000
+npm install -g agent-browser
+agent-browser install  # Download Chromium
 ```
