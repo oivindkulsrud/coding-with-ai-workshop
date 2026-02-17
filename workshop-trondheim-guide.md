@@ -6,7 +6,7 @@ Vscode kan installeres her:
 https://code.visualstudio.com/
 
 
-Så trenger du vscode codex visual studio code:
+Så trenger du codex extensionen:
 https://marketplace.visualstudio.com/items?itemName=openai.chatgpt
 
 Codex kan også installeres som en CLI app på mac, linux og windows (med WSL). Den raskeste veien til målet er å bruke vscode, men om du har installert eller får installert node kan du installere codex for bruk i terminalen med `npm i -g @openai/codex`. 
