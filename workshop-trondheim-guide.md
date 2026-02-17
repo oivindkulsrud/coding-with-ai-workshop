@@ -22,5 +22,43 @@ Når du er ferdig med det ovenfor er du klar til å sette igang med hackathon op
 ## Agent.md
 Codex plukker automatisk opp en Agent.md i folderen du jobber i og følger instruksjoner gitt i denne. Et eksempel på ting jeg bruker Agent.md til er å sørge for at agenter husker jeg bruker `uv` for håndtere installasjon av biblioteker og virtualenvs når jeg bruker python. Agenten vil som regel ikke få med seg dette. Istedenfor å stadig vekk rette på agenten kan man forklare det med en setning i Agent.md filen. Mange har et template for Agent.md per type prosjekt (programmeringsspråk, type prosjekt).
 
-## MCP-server 
 
+## Skills
+
+Du kan finne skills her:
+https://skills.sh/
+
+Dette er den vi nevner i vår presentasjon:
+https://skills.sh/anthropics/skills/frontend-design
+
+
+Dette er sånn du kan installere den selv:
+`npx skills add https://github.com/anthropics/skills --skill frontend-design`
+
+Velg disse instillingene:
+![anbefalte instillinger](images/skills1.png)
+
+Det hender agenten ikke plukker opp at den har skills tilgjengelig, det kan hjelpe å minne den på dette. Det samme gjelder for MCP servere.
+
+
+## MCP-server 
+https://www.npmjs.com/package/chrome-devtools-mcp
+
+Follow the configure MCP guide using the standard config from above. You can also install the Chrome DevTools MCP server using the Codex CLI:
+codex mcp add chrome-devtools -- npx chrome-devtools-mcp@latest
+On Windows 11
+
+Configure the Chrome install location and increase the startup timeout by updating .codex/config.toml and adding the following env and startup_timeout_ms parameters:
+
+
+```
+command = "cmd"
+args = [
+    "/c",
+    "npx",
+    "-y",
+    "chrome-devtools-mcp@latest",
+]
+env = { SystemRoot="C:\\Windows", PROGRAMFILES="C:\\Program Files" }
+startup_timeout_ms = 20_000
+```
