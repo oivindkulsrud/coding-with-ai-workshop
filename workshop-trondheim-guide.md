@@ -35,8 +35,20 @@ https://skills.sh/anthropics/skills/frontend-design
 Dette er sånn du kan installere den selv:
 `npx skills add https://github.com/anthropics/skills --skill frontend-design`
 
-Velg disse instillingene:
-![anbefalte instillinger](images/skills1.png)
+Du vil få en del valg når du installerer:
+
+"Which agents do you want to install to?"
+
+Trykk enter, default er riktig her.
+
+"Installation scope"
+
+Velg project scope riktig her.
+
+"Installation method"
+
+Velg "Copy to all agents", dette er mer robust.
+
 
 Det hender agenten ikke plukker opp at den har skills tilgjengelig, det kan hjelpe å minne den på dette. Det samme gjelder for MCP servere.
 
