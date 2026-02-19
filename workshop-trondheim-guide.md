@@ -44,6 +44,8 @@ https://skills.sh/anthropics/skills/frontend-design
 Dette er sånn du kan installere den selv:
 `npx skills add https://github.com/anthropics/skills --skill frontend-design`
 
+`npx skills add https://github.com/chongdashu/phaserjs-tinyswords --skill phaser-gamedev`
+
 Du vil få en del valg når du installerer:
 
 "Which agents do you want to install to?"
